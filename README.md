@@ -21,6 +21,19 @@ $parser = new Parser();
 echo $parser->find();
 ```
 
+## Parameters
+
+| Parameter           | Description                                                                                                      | Default |
+|---------------------|------------------------------------------------------------------------------------------------------------------|---------|
+| host (string)       | IP address or database host name                                                                                 | -       |
+| port (string)       | Database host port                                                                                               | -       |
+| db (string)         | Name of the database to be searched                                                                              | -       |
+| table (string)      | Name of the table in which the search will be performed                                                          | -       |
+| credentials (array) | An associative array of credentials for connecting to the database with username and password keys, respectively | -       |
+| column (string)     | The column to be searched by                                                                                     | id      |
+| charset (string)    | Encoding                                                                                                         | utf8    |
+| start_id (int)      | Identifier from which the search will start                                                                      | 1       |
+
 ## Testing
 
 ```bash
